@@ -13,7 +13,7 @@ import com.driverscript.TestBase;
 
 public class TestUtil extends TestBase {
 	public static void captureScreenshot() {
-		TakesScreenshot ts = (TakesScreenshot)driver;
+		TakesScreenshot ts =(TakesScreenshot)driver;
 		File file =ts.getScreenshotAs(OutputType.FILE);
 		Date d = new Date();
 		String sc = d.toString().replace(':', '_').replace(' ','_')+".jpg";

@@ -1,17 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[TestCase started is testFour]]>
+    </line>
+    <line>
+      <![CDATA[TestCase started is testOne]]>
+    </line>
+    <line>
+      <![CDATA[TestCase started is testEight]]>
+    </line>
+    <line>
+      <![CDATA[TestCase started is testNine]]>
+    </line>
+    <line>
+      <![CDATA[TestCase started is testSeven]]>
+    </line>
+    <line>
+      <![CDATA[TestCase started is testSix]]>
+    </line>
+    <line>
+      <![CDATA[TestCase started is testThree]]>
+    </line>
+    <line>
+      <![CDATA[TestCase started is testTwo]]>
+    </line>
+    <line>
+      <![CDATA[TestCase started is testTen]]>
+    </line>
+    <line>
+      <![CDATA[TestCase started is testFive]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-07-28T23:07:18 IST" name="Default suite" finished-at="2023-07-28T23:08:12 IST" duration-ms="54682">
+  <suite started-at="2023-10-19T21:41:28 IST" name="Suite" finished-at="2023-10-19T21:41:30 IST" duration-ms="1245">
     <groups>
+      <group name="Smoke">
+        <method signature="Demo.testEight()[pri:0, instance:com.testcases.Demo@24c4ddae]" name="testEight" class="com.testcases.Demo"/>
+        <method signature="Demo.testFive()[pri:0, instance:com.testcases.Demo@24c4ddae]" name="testFive" class="com.testcases.Demo"/>
+        <method signature="Demo.testFour()[pri:0, instance:com.testcases.Demo@24c4ddae]" name="testFour" class="com.testcases.Demo"/>
+        <method signature="Demo.testNine()[pri:0, instance:com.testcases.Demo@24c4ddae]" name="testNine" class="com.testcases.Demo"/>
+        <method signature="Demo.testOne()[pri:0, instance:com.testcases.Demo@24c4ddae]" name="testOne" class="com.testcases.Demo"/>
+        <method signature="Demo.testSeven()[pri:0, instance:com.testcases.Demo@24c4ddae]" name="testSeven" class="com.testcases.Demo"/>
+        <method signature="Demo.testSix()[pri:0, instance:com.testcases.Demo@24c4ddae]" name="testSix" class="com.testcases.Demo"/>
+        <method signature="Demo.testTen()[pri:0, instance:com.testcases.Demo@24c4ddae]" name="testTen" class="com.testcases.Demo"/>
+        <method signature="Demo.testThree()[pri:0, instance:com.testcases.Demo@24c4ddae]" name="testThree" class="com.testcases.Demo"/>
+        <method signature="Demo.testTwo()[pri:0, instance:com.testcases.Demo@24c4ddae]" name="testTwo" class="com.testcases.Demo"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2023-07-28T23:07:18 IST" name="Default test" finished-at="2023-07-28T23:08:12 IST" duration-ms="54682">
-      <class name="selenium.ParabankSuite.TestBuild">
-        <test-method signature="launchApplication()[pri:0, instance:selenium.ParabankSuite.TestBuild@7b36aa0c]" started-at="2023-07-28T23:07:18 IST" name="launchApplication" finished-at="2023-07-28T23:08:12 IST" duration-ms="54578" status="PASS">
+    <test started-at="2023-10-19T21:41:28 IST" name="EdgeTest" finished-at="2023-10-19T21:41:29 IST" duration-ms="440">
+      <class name="com.testcases.Demo">
+        <test-method signature="testOne()[pri:0, instance:com.testcases.Demo@24c4ddae]" started-at="2023-10-19T21:41:29 IST" name="testOne" finished-at="2023-10-19T21:41:29 IST" duration-ms="57" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[TestCase started is testOne]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- launchApplication -->
-      </class> <!-- selenium.ParabankSuite.TestBuild -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testOne -->
+        <test-method signature="testFive()[pri:0, instance:com.testcases.Demo@24c4ddae]" started-at="2023-10-19T21:41:29 IST" name="testFive" finished-at="2023-10-19T21:41:29 IST" duration-ms="348" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TestCase started is testFive]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testFive -->
+        <test-method signature="testFour()[pri:0, instance:com.testcases.Demo@24c4ddae]" started-at="2023-10-19T21:41:29 IST" name="testFour" finished-at="2023-10-19T21:41:29 IST" duration-ms="65" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TestCase started is testFour]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testFour -->
+        <test-method signature="testNine()[pri:0, instance:com.testcases.Demo@24c4ddae]" started-at="2023-10-19T21:41:29 IST" name="testNine" finished-at="2023-10-19T21:41:29 IST" duration-ms="64" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TestCase started is testNine]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testNine -->
+        <test-method signature="testEight()[pri:0, instance:com.testcases.Demo@24c4ddae]" started-at="2023-10-19T21:41:29 IST" name="testEight" finished-at="2023-10-19T21:41:29 IST" duration-ms="63" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TestCase started is testEight]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testEight -->
+        <test-method signature="testSix()[pri:0, instance:com.testcases.Demo@24c4ddae]" started-at="2023-10-19T21:41:29 IST" name="testSix" finished-at="2023-10-19T21:41:29 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TestCase started is testSix]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testSix -->
+        <test-method signature="testSeven()[pri:0, instance:com.testcases.Demo@24c4ddae]" started-at="2023-10-19T21:41:29 IST" name="testSeven" finished-at="2023-10-19T21:41:29 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TestCase started is testSeven]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testSeven -->
+        <test-method signature="testThree()[pri:0, instance:com.testcases.Demo@24c4ddae]" started-at="2023-10-19T21:41:29 IST" name="testThree" finished-at="2023-10-19T21:41:29 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TestCase started is testThree]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testThree -->
+        <test-method signature="testTwo()[pri:0, instance:com.testcases.Demo@24c4ddae]" started-at="2023-10-19T21:41:29 IST" name="testTwo" finished-at="2023-10-19T21:41:29 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TestCase started is testTwo]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testTwo -->
+        <test-method signature="testTen()[pri:0, instance:com.testcases.Demo@24c4ddae]" started-at="2023-10-19T21:41:29 IST" name="testTen" finished-at="2023-10-19T21:41:29 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TestCase started is testTen]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testTen -->
+      </class> <!-- com.testcases.Demo -->
+    </test> <!-- EdgeTest -->
+    <test started-at="2023-10-19T21:41:30 IST" name="Chrome Test" finished-at="2023-10-19T21:41:30 IST" duration-ms="3">
+    </test> <!-- Chrome Test -->
+  </suite> <!-- Suite -->
 </testng-results>

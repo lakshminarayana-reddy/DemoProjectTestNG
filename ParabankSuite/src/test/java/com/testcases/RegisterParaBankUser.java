@@ -9,8 +9,7 @@ import com.driverscript.TestBase;
 import com.pages.RegisterPage;
 
 public class RegisterParaBankUser extends TestBase{
-	
-  @Test(dataProviderClass=com.utilites.TestUtil.class, dataProvider="registerParaUser")
+  @Test(dataProviderClass=com.utilites.TestUtil.class, dataProvider="registerParaUser", groups= {"Regression"})
   public void registerParaBankUser(Hashtable<String, String> data) {
 	  RegisterPage register = PageFactory.initElements(driver, RegisterPage.class);
 	  register.clickRegisterButton();
@@ -29,5 +28,9 @@ public class RegisterParaBankUser extends TestBase{
 	  register.loginUserName(data.get("UserName"));
 	  register.loginPassword(data.get("Password"));
 	  register.clickLogin();
+  }
+  @Test(groups= {"Smoke"})
+  public void testGroups() {
+	  System.out.println("Testing groups");
   }
 }
