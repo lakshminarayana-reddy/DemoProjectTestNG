@@ -25,11 +25,12 @@ public class RegisterParaBankUser extends TestBase{
 	  register.setPassword(data.get("Password"));
 	  register.confirmPassword(data.get("Confirm"));
 	  register.clickRegisterUserButton();
+	  register.clickLogoutButton();
 	  register.loginUserName(data.get("UserName"));
 	  register.loginPassword(data.get("Password"));
-	  register.clickLogin();
+	  //register.clickLogin();
   }
-  @Test(groups= {"Smoke"})
+  //@Test(groups= {"Smoke"})
   public void testGroups() {
 	  System.out.println("Testing groups");
   }

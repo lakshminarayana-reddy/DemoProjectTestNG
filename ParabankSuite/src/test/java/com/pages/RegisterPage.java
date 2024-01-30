@@ -65,6 +65,10 @@ public class RegisterPage {
 	@CacheLookup
 	WebElement registerUser;
 	
+	@FindBy(xpath=ObjectRepository.logOutXpath)
+	@CacheLookup
+	WebElement logOutBtn;
+	
 	@FindBy(xpath=ObjectRepository.usernameLoginXpath)
 	@CacheLookup
 	WebElement userNameLogin;
@@ -126,7 +130,9 @@ public class RegisterPage {
 	}
 	public void clickRegisterUserButton() {
 		registerUser.click();
-		driver.navigate().back();
+	}
+	public void clickLogoutButton() {
+		loginButton.click();
 	}
 	public void loginUserName(String loginUname) {
 		userNameLogin.sendKeys(loginUname);
@@ -137,6 +143,7 @@ public class RegisterPage {
 		Reporter.log(loginPassword);
 	}
 	public void clickLogin() {
-		loginButton.click();;
+		loginButton.click();
+		System.out.println("Login clicked");
 	}
 }

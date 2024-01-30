@@ -16,8 +16,9 @@ public class ObjectRepository {
 	public static final String passwordXpath="//input[@id='customer.password']";
 	public static final String confirmPWDXpath="//input[@id='repeatedPassword']";
 	public static final String registerUserBtnXpath="//input[@value='Register']";
+	public static final String logOutXpath="//a[text()='Log Out']";
 	public static final String usernameLoginXpath="//input[@name='username']";
 	public static final String passwordLoginXpath="//input[@name='password']";
-	public static final String loginBtnXpath="//input[@value='Log In']";
+	public static final String loginBtnXpath="//div[@class='login']//input[@value='Log In']";
 
 }
