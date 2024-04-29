@@ -28,13 +28,13 @@ public class CustomListeners extends TestBase implements ITestListener{
 	public void onTestStart(ITestResult result) {
 		extent.attachReporter(htmlReport);
 		Reporter.log("TestCase started is "+result.getName());
-		test=extent.createTest(result.getTestClass().getName()+"@TestCase is"+result.getMethod().getMethodName());
+		test=extent.createTest(result.getTestClass().getName()+"@TestCase is "+result.getMethod().getMethodName());
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		String methodName = result.getMethod().getMethodName();
-		String logText = "TestCase :"+methodName.toUpperCase()+ "IS PASSED";
+		String logText = "TestCase :"+methodName.toUpperCase()+ " IS PASSED";
 		Markup m = MarkupHelper.createLabel(logText, ExtentColor.GREEN);
 		test.log(Status.PASS, m);
 	}
@@ -43,7 +43,7 @@ public class CustomListeners extends TestBase implements ITestListener{
 	public void onTestFailure(ITestResult result) {
 		TestUtil.captureScreenshot();
 		String methodName = result.getMethod().getMethodName();
-		String logText ="TestCase :"+methodName.toUpperCase()+ "IS FAILED";
+		String logText ="TestCase :"+methodName.toUpperCase()+ " IS FAILED";
 		Markup m = MarkupHelper.createLabel(logText, ExtentColor.RED);
 		test.log(Status.FAIL, m);
 	}
@@ -51,7 +51,7 @@ public class CustomListeners extends TestBase implements ITestListener{
 	@Override
 	public void onTestSkipped(ITestResult result) {
 		String methodName = result.getMethod().getMethodName();
-		String logText ="TestCase :"+methodName.toUpperCase()+"IS SKIPPED";
+		String logText ="TestCase :"+methodName.toUpperCase()+" IS SKIPPED";
 		Markup m = MarkupHelper.createLabel(logText, ExtentColor.YELLOW);
 		test.log(Status.SKIP, m);
 	}

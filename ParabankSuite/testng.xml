@@ -2,35 +2,32 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="methods">
 	<listeners>
-		<listener class-name="com.listeners.CustomListeners"></listener>
+		<listener class-name="com.listeners.CustomListeners"/>
 	</listeners>
-	<test thread-count="5" name="EdgeTest">
+	<!-- <test thread-count="5" name="EdgeTest">
 		<groups>
 			<run>
 				<include name="Smoke">
 					<parameter name="browser" value="edge"></parameter>
 					<classes>
-						<!-- <class name="com.testcases.RegisterParaBankUser" />-->
+						<class name="com.testcases.RegisterParaBankUser" />
 						<class name="com.testcases.Demo"/>
 					</classes>
 				</include>
 			</run>
 		</groups>
-		</test> <!--
-	Test -->
+		</test>--> <!--Test -->
 	<test thread-count="5" name="Chrome Test">
 		<groups>
 			<run>
 				<include name="Regression">
 					<parameter name="browser" value="chrome"></parameter>
 					<classes>
-						<!-- <class name="com.testcases.RegisterParaBankUser" />-->
+						<class name="com.testcases.RegisterParaBankUser" />
 						<class name="com.testcases.Demo"/>
 					</classes>
 				</include>
 			</run>
 		</groups>
-		</test> <!--
-	Test -->
-</suite> <!--
-Suite -->
+		</test> <!--Test -->
+</suite> <!--Suite -->

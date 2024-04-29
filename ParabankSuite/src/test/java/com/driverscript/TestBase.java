@@ -22,7 +22,7 @@ public class TestBase {
 	public static FileInputStream fis;
 	public static WebDriverWait wait;
 	@BeforeSuite
-	@Parameters({"browser"})
+	//@Parameters({"browser"})
 	public WebDriver setUp() throws IOException {
 		try {
 			fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\com\\driverscript\\configuration.properties");
@@ -31,7 +31,6 @@ public class TestBase {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-
 		if(config.getProperty("browser").equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
@@ -44,7 +43,7 @@ public class TestBase {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		}
-//		Implicit Wait
+		//Implicit Wait
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		driver.get(config.getProperty("url"));
 		System.out.println("Application opened successfully");

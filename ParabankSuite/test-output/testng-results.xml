@@ -1,113 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Sai]]>
-    </line>
-    <line>
-      <![CDATA[Charan]]>
-    </line>
-    <line>
-      <![CDATA[Madhapur]]>
-    </line>
-    <line>
-      <![CDATA[Hyderabad]]>
-    </line>
-    <line>
-      <![CDATA[Telangana]]>
-    </line>
-    <line>
-      <![CDATA[500081]]>
-    </line>
-    <line>
-      <![CDATA[9876543210]]>
-    </line>
-    <line>
-      <![CDATA[173107]]>
-    </line>
-    <line>
-      <![CDATA[saireddy]]>
-    </line>
-    <line>
-      <![CDATA[saireddy]]>
-    </line>
-    <line>
-      <![CDATA[saireddy]]>
-    </line>
-    <line>
-      <![CDATA[saireddy]]>
-    </line>
-    <line>
-      <![CDATA[saireddy]]>
-    </line>
   </reporter-output>
-  <suite started-at="2024-01-29T08:00:28 IST" name="Default suite" finished-at="2024-01-29T08:00:32 IST" duration-ms="3820">
+  <suite started-at="2024-04-11T22:00:13 IST" name="Suite" finished-at="2024-04-11T22:00:13 IST" duration-ms="196">
     <groups>
       <group name="Regression">
-        <method signature="RegisterParaBankUser.registerParaBankUser(java.util.Hashtable)[pri:0, instance:com.testcases.RegisterParaBankUser@179ece50]" name="registerParaBankUser" class="com.testcases.RegisterParaBankUser"/>
+        <method signature="RegisterParaBankUser.registerParaBankUser(java.util.Hashtable)[pri:0, instance:com.testcases.RegisterParaBankUser@404bbcbd]" name="registerParaBankUser" class="com.testcases.RegisterParaBankUser"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-01-29T08:00:28 IST" name="Default test" finished-at="2024-01-29T08:00:32 IST" duration-ms="3820">
+    <test started-at="2024-04-11T22:00:13 IST" name="Chrome Test" finished-at="2024-04-11T22:00:13 IST" duration-ms="196">
       <class name="com.testcases.RegisterParaBankUser">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testcases.RegisterParaBankUser@179ece50]" started-at="2024-01-29T08:00:20 IST" name="setUp" finished-at="2024-01-29T08:00:28 IST" duration-ms="8058" status="PASS">
+        <test-method signature="registerParaBankUser(java.util.Hashtable)[pri:0, instance:com.testcases.RegisterParaBankUser@404bbcbd]" started-at="2024-04-11T22:00:13 IST" name="registerParaBankUser" data-provider="registerParaUser" finished-at="2024-04-11T22:00:13 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/logging/log4j/util/Lazy]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/logging/log4j/util/Lazy
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:803)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:911)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.NoClassDefFoundError: org/apache/logging/log4j/util/Lazy
+at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.<init>(ClassLoaderContextSelector.java:55)
+at org.apache.logging.log4j.core.impl.Log4jContextFactory.createContextSelector(Log4jContextFactory.java:108)
+at org.apache.logging.log4j.core.impl.Log4jContextFactory.<init>(Log4jContextFactory.java:60)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:347)
+at java.base/java.lang.Class.newInstance(Class.java:645)
+at org.apache.logging.log4j.LogManager.<clinit>(LogManager.java:95)
+at org.apache.poi.ooxml.POIXMLDocumentPart.<clinit>(POIXMLDocumentPart.java:56)
+at com.utilites.ExcelUtility.<init>(ExcelUtility.java:17)
+at com.utilites.TestUtil.getData(TestUtil.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
+... 12 more
+Caused by: java.lang.ClassNotFoundException: org.apache.logging.log4j.util.Lazy
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="registerParaBankUser(java.util.Hashtable)[pri:0, instance:com.testcases.RegisterParaBankUser@179ece50]" started-at="2024-01-29T08:00:29 IST" name="registerParaBankUser" data-provider="registerParaUser" finished-at="2024-01-29T08:00:32 IST" duration-ms="2697" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Phone=9876543210, UserName=saireddy, Address=Madhapur, Password=saireddy, LastName=Charan, Confirm=saireddy, City=Hyderabad, ZipCode=500081, SSN=173107, FirstName=Sai, State=Telangana}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Sai]]>
-            </line>
-            <line>
-              <![CDATA[Charan]]>
-            </line>
-            <line>
-              <![CDATA[Madhapur]]>
-            </line>
-            <line>
-              <![CDATA[Hyderabad]]>
-            </line>
-            <line>
-              <![CDATA[Telangana]]>
-            </line>
-            <line>
-              <![CDATA[500081]]>
-            </line>
-            <line>
-              <![CDATA[9876543210]]>
-            </line>
-            <line>
-              <![CDATA[173107]]>
-            </line>
-            <line>
-              <![CDATA[saireddy]]>
-            </line>
-            <line>
-              <![CDATA[saireddy]]>
-            </line>
-            <line>
-              <![CDATA[saireddy]]>
-            </line>
-            <line>
-              <![CDATA[saireddy]]>
-            </line>
-            <line>
-              <![CDATA[saireddy]]>
-            </line>
           </reporter-output>
         </test-method> <!-- registerParaBankUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testcases.RegisterParaBankUser@179ece50]" started-at="2024-01-29T08:00:32 IST" name="tearDown" finished-at="2024-01-29T08:00:32 IST" duration-ms="251" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- com.testcases.RegisterParaBankUser -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Chrome Test -->
+  </suite> <!-- Suite -->
 </testng-results>

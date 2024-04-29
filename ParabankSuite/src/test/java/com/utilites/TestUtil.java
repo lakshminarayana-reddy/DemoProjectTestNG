@@ -3,12 +3,10 @@ package com.utilites;
 import java.io.File;
 import java.util.Date;
 import java.util.Hashtable;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.annotations.DataProvider;
-
 import com.driverscript.TestBase;
 
 public class TestUtil extends TestBase {
@@ -40,10 +38,8 @@ public class TestUtil extends TestBase {
 				table.put(excel.cellData(0, colNum), excel.cellData(rowNum, colNum));
 				data[rowNum-1][0] = table;
 			}
-			
 		}
 		return data;
-
 	}
 
 }
